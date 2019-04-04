@@ -13,7 +13,7 @@ tenets:
 
       go.switch_stmt(depth = any):
         go.case_clause(depth = any):
-          @rewrite --line ""
+          @rewrite --replace --line ""
           @review comment
           go.branch_stmt(depth = any):
             tok == "break"
