@@ -11,5 +11,11 @@ func main() {
 	case "darwin":
 		fmt.Println("OS X.")
 		break
+	case "linux":
+		fmt.Println("Linux.")
+		break
+	default:
+		fmt.Printf("%s.\n", os)
+		break
 	}
 }
